@@ -1,0 +1,47 @@
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100vw;
+      height: 100vw;
+      margin: auto;
+
+  }
+
+  .myCarousel {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    display: block;
+    min-width: 100vw;
+    height: 100vh;
+} 
+.carousel {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.form-group {
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 541px;
+}
+
+.form-group input{
+    padding: 10px 5px;
+    width: 400px;
+}
+
