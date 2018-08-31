@@ -1,0 +1,13 @@
+$max-size: 1280px;
+$min-size: 320px;
+$mid-size: 1024px;
+
+
+body {
+    max-width: $max-size;
+    min-width: $min-size;
+}
+
+.container {
+    max-width: $mid-size;
+}
