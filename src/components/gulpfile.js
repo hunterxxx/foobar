@@ -14,16 +14,17 @@ gulp.task('default', function(){		//can use gulp.start
 
 //copy html js
 gulp.task('copy', function(){	
-	gulp.src(['event_index.html', 'js/script.js'])
+	gulp.src(['event_index.html', 'js/script.js', 'css/*.css'])
 		.pipe(gulp.dest('dist/'));
 	console.log('copied HTML and JS');
 });
 
 //compile scss
 gulp.task('styles', function(){
-	gulp.src('scss/style.scss')
+	gulp.src('scss/*.scss')
 		.pipe(sass())
 		.pipe(cssClean())
+		.pipe(gulp.dest('css/'))
 		.pipe(gulp.dest('dist/'));
 	console.log("compiled and cleaned scss")
 });
