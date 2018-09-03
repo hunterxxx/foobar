@@ -45,3 +45,16 @@
     width: 400px;
 }
 
+.btn-lg{
+    border-radius: 0;
+    border: none;
+}
+
+.slide h3{
+    font-size: 30px;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+}
+

@@ -8,18 +8,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/slider.css">
+  <script type="text/javascript" src="js/slider.js"></script>
 </head>
 <body>
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="form-group">
-            <form action="/action_page.php">
-                <input type="text" name="search" placeholder="Enter a search" padding="10px 5px" ;
+
+                <input type="text" name="search" id="sliderSearch" placeholder="Enter a search" padding="10px 5px" ;
                 width="400px">
                <!-- <input type="submit" value="Submit"> -->
-                <button type="button" class="btn btn-primary btn-lg" onclick="alert('We are a work in progress')">Large button</button>
-                </form>
-
+                <button id ="searchButton" onclick="submit()" class="btn btn-primary btn-lg">Suchen</button>
+          
 
       </div>
     <!--Indicators -->
