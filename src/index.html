@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="components/css/events.css">
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+
+  
 </head>
 
 <body>
@@ -40,12 +44,45 @@
     <main>
         <section id="slider">
         </section>
+
+
         <div class="container">
             <section id="call-to-action">
 
             </section>
+
+
+            <div id="event"></div>
             <section id="event-row">
-            </section>
+                <script id="event-template" type="text/x-handlebars-template">
+                    {{#each items}} <h4>{{eventTitle}}</h4>
+                        <div class="eventStyle">
+                        <div class="grid-container">
+                            <div class="item2">
+                                <img src="{{getImage}}" class="eventImage" alt="event image" />
+                            </div>
+                            <div class="grid-container">
+                                <div class="item3">
+                                    {{getLocation}}
+                                </div>  
+                                <div class="item4">
+                                    {{getDate}}
+                                </div>
+                                <div class="item5">
+                                    {{getDescription}}
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        {{/each}}
+                </script>
+
+
+        </section>
+
+
+
+
             <section id="form-module">
                 <form action="#">
                     <h2>Subscribe Form</h2>
@@ -95,6 +132,8 @@
             © 2018 Foobar Team
         </div>
     </footer>
+
+    <script src="components/js/events.js"></script>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
