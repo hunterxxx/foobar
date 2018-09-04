@@ -1,6 +1,14 @@
-.top-navigation {
+.main-header {
     position: absolute;
-    top: 200px;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.logo {
+    float: left;
 }
 
 .top-navigation ul {
@@ -11,4 +19,16 @@
 .top-navigation li {
     display: inline-block;
     padding: 10px;
+}
+
+.top-navigation a {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.top-navigation a:hover {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
 }
