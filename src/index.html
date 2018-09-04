@@ -54,83 +54,82 @@
     <main>
         <section id="slider">
 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="form-group">
-                  
-                                  <input type="text" name="search" id="sliderSearch" placeholder="Enter a search" padding="10px 5px" ;
-                                  width="400px">
-                                 <!-- <input type="submit" value="Submit"> -->
-                                  <button id ="searchButton" onclick="submit()" class="btn btn-primary btn-lg">Suchen</button>
-                            
-                  
-                        </div>
-                      <!--Indicators -->
-                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                      </ol>
-                  
-                      <!--Wrapper for slides -->
-                      <div class="carousel-inner" role="listbox">
-                  
-                        <div class="item active">
-                          <img src="https://bit.ly/2wv6b6q" alt="Catering">
-                          <div class="carousel-caption">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="form-group">
+
+                    <input type="text" name="search" id="sliderSearch" placeholder="Enter a search" padding="10px 5px" ; width="400px">
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button id="searchButton" onclick="submit()" class="btn btn-primary btn-lg">Suchen</button>
+
+
+                </div>
+                <!--Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!--Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="https://bit.ly/2wv6b6q" alt="Catering">
+                        <div class="carousel-caption">
                             <h3>Catering</h3>
                             <p>Let's cater for you and make you happy</p>
-                          </div>
                         </div>
-                  
-                        <div class="item">
-                          <img src="https://bit.ly/2PkHWyA" alt="Dancing">
-                          <div class="carousel-caption">
+                    </div>
+
+                    <div class="item">
+                        <img src="https://bit.ly/2PkHWyA" alt="Dancing">
+                        <div class="carousel-caption">
                             <h3>Dancing</h3>
                             <p>Dance like there is no tommorrow</p>
-                          </div>
                         </div>
-                      
-                        <div class="item">
-                          <img src="https://bit.ly/2N2urWS" alt="Decoration">
-                          <div class="carousel-caption">
+                    </div>
+
+                    <div class="item">
+                        <img src="https://bit.ly/2N2urWS" alt="Decoration">
+                        <div class="carousel-caption">
                             <h3>Flowers</h3>
                             <p>Beautiful flowers in Kolymbari, Crete.</p>
-                          </div>
                         </div>
-                  
-                  
-                       <!--Left and right controls -->
-                          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    </div>
+
+
+                    <!--Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
-                          </a>
-                    </div>
-                  </div>
+                    </a>
+                </div>
+            </div>
 
         </section>
 
 
-  
-            <section id="call-to-action">
-                <div class="mycontainer">
-                    <img src="components/img/jazz.jpg" alt="Snow">
-                    <div class="centered">
 
-                        <div class="myTitle">Create your event now with FooBar</div>
-                        <a class="myTitle cropCenter" href="#form-module">Create Now</a>
+        <section id="call-to-action">
+            <div class="mycontainer">
+                <img src="components/img/jazz.jpg" alt="Snow">
+                <div class="centered">
 
-                    </div>
+                    <div class="myTitle">Create your event now with FooBar</div>
+                    <a class="myTitle cropCenter" href="#form-module">Create Now</a>
+
                 </div>
-            </section>
+            </div>
+        </section>
 
 
-            <div id="event"></div>
-            <section id="event-row">
-                <script id="event-template" type="text/x-handlebars-template">
+        <div id="event"></div>
+        <section id="event-row">
+            <script id="event-template" type="text/x-handlebars-template">
                     
                         {{#each items}}<div class="eventStyle"></div> <h4>{{eventTitle}}</h4>
                         <div class="grid-container">
@@ -155,14 +154,12 @@
                 </script>
 
 
-            </section>
+        </section>
 
-
-
-
-            <section id="form-module">
-                <form action="#">
-                    <h2>Subscribe Form</h2>
+        <section id="form-module">
+            <div class="formContainer">
+                <form>
+                    <label class="form-title">Subscribe Form</label>
                     <div class="form-group">
                         <label for="textfield">
                             Name
@@ -179,32 +176,41 @@
                         <label for="textarea">
                             Brief Description
                         </label>
-                        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                        <textarea name="textarea" id="textarea" draggable="false" rows="2"></textarea>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>
                             Service
                         </label>
                         <div>
                             <input type="checkbox" name="catering" id="catering"> Catering
                         </div>
-                        <label></label>
                         <div>
                             <input type="checkbox" name="dancing" id="dancing"> Dancing
                         </div>
                         <div>
                             <input type="checkbox" name="dancing" id="deco"> Decoration
                         </div>
+                    </div> -->
+                    <div class="form-group col-auto my-1">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">Services</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">catering</option>
+                            <option value="2">dancing</option>
+                            <option value="3">decoration</option>
+                        </select>
                     </div>
+
                     <div class="form-buttons">
-                        <input type="submit" value="Send">
-                        <input type="reset" value="Cancel">
+                        <input type="submit" value="Save">
                     </div>
                 </form>
-            </section>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" style="float:right">
             © 2018 Foobar Team
         </div>
     </footer>

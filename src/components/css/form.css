@@ -1,0 +1,80 @@
+.form-group {
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+.form-buttons {
+    margin-bottom: 10px;
+}
+.form-buttons {
+    /* margin-left: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: azure;
+}
+.form-buttons div {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+
+.form-group label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    position: relative;
+    right: -70px;
+    width: 41%;
+    margin: auto;
+    padding: 15px
+  }
+.form-group input {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    right: -80px;
+    width: 281px;
+    margin: auto;
+    padding: 7px;
+    vertical-align: middle;
+  }
+.form-group textarea {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    right: -80px;
+    width: 281px;
+    margin: auto;
+    padding: 7px;
+    vertical-align: middle;
+  }  
+.form-group select {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    right: -80px;
+    width: 281px;
+    margin: auto;
+    padding: 7px;
+    vertical-align: middle;
+  }
+
+.form-title {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+.form-group textarea
+{
+    resize: none;
+}
+
+.formContainer {
+    background-color: azure;
+    width: 90%;
+    margin: auto;
+}
