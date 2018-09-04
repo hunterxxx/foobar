@@ -1,5 +1,5 @@
 /* Container holding the image and the text */
-.container {
+.mycontainer {
     position: relative;
     text-align: center;
     color: white;
@@ -14,22 +14,27 @@
 }
 
 /* text overlay on image */
-h1, .entry-title {
-	font-size: 3rem;
+.myTitle {
+	font-size: 1.5rem;
+}
+
+.cropCenter {
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /* Container holding the image and the button */
-.container img {
+.mycontainer img {
     width: 100%;
     height: auto;
 }
 
-a.jumper{
+/* a.jumper{
 	font-size: 2rem;
 }
 a.jumper:link {color:#ff0000;}
 a.jumper:visited {color:#0000ff;}
-a.jumper:hover {color:#ffcc00;}
+a.jumper:hover {color:#ffcc00;} */
 
 
 
