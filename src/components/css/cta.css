@@ -11,6 +11,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
 }
 
 /* text overlay on image */
@@ -27,6 +30,10 @@
 .mycontainer img {
     width: 100%;
     height: auto;
+}
+
+#call-to-action{
+    padding: 30px 0;
 }
 
 /* a.jumper{
