@@ -1,6 +1,6 @@
-.top-navigation {
-    position: absolute;
-    top: 200px;
+.logo {
+    max-width: 200px;
+    float: left;
 }
 
 .top-navigation ul {
@@ -11,4 +11,22 @@
 .top-navigation li {
     display: inline-block;
     padding: 10px;
+}
+
+.navbar-nav{
+    float: right;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-default {
+    background-color: #333;
+    border-color: #333;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: #fcf8e3;
 }

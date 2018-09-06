@@ -12,13 +12,14 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="components/css/cta.css">
     <link rel="stylesheet" href="components/css/events.css">
     <link rel="stylesheet" href="components/css/slider.css">
+    <link rel="stylesheet" href="components/css/header.css">
     <script type="text/javascript" src="components/js/slider.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
@@ -36,22 +37,18 @@
 
     <!-- Add your site or application content here -->
     <header>
-        <div class="logo">
-            <img src="https://dummyimage.com/150x150/c2c2c2/fff" alt="Logo">
-        </div>
-        <nav class="top-navigation">
-            <ul>
-                <li>
-                    <a href="#call-to-action">Link 1</a>
-                </li>
-                <li>
-                    <a href="#event-row">Link 2</a>
-                </li>
-                <li>
-                    <a href="#form-module">Link 3</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Eventmanager</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li><a href="##call-to-action">Call To Action</a></li>
+                        <li><a href="#event-row">Events</a></li>
+                        <li><a href="#form-module">Create Event</a></li>
+                      </ul>
+                    </div>
+            </nav>
     </header>
     <main>
         <section id="slider">
@@ -123,7 +120,7 @@
                     <div class="centered">
 
                         <div class="myTitle">Create your event now with FooBar</div>
-                        <a class="myTitle cropCenter" href="#form-module">Create Now</a>
+                        <button type="button" class="btn btn-info">Create Now</button>
 
                     </div>
                 </div>
@@ -206,8 +203,14 @@
             </section>
     </main>
     <footer>
-        <div class="footer-content">
-            © 2018 Foobar Team
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                        <div class="footer-content">
+                               <p> © 2018 Foobar Team </p>
+                        </div>
+                </div>
+            </div>
         </div>
     </footer>
 

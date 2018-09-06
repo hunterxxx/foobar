@@ -17,7 +17,7 @@
     height: 100vh;
 } 
 .carousel {
-    position: relative;
+    position: static !important;
     height: 100vh;
     width: 100vw;
 }
@@ -56,5 +56,6 @@
 
 .carousel-caption p{
     font-size: 18px;
+    padding-bottom: 90px;
 }
 
